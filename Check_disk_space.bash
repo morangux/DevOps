@@ -4,7 +4,7 @@ echo -n  "Please Enter Host : "
 
 read HOST
 
-ssh morangux@$HOST df -hl | grep "/infrastructure*"
+ssh morangux@$HOST df -hl
 
 if [ $? == 0 ]
 
